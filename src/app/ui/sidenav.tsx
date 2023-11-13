@@ -4,20 +4,19 @@ import Image from 'next/image';
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-row px-3 py-4 md:px-2">
+    <div className="flex h-full flex-row p-4">
       <Link
-        className="mb-2 flex items-end justify-start rounded-md p-4"
+        className="flex items-center justify-start rounded-md"
         href="/"
       >
-        <div className="w-32 md:w-40">
-          LOGO
-          {/* <Image
-              src="/logo.png"
+        <div className="w-100 md:w-40 flex items-center justify-center">
+          <Image
+              src="/images/adz-logo-blue.png"
               alt="Logo"
-              width={48}
-              height={16}
+              width={100}
+              height={100}
               priority
-            /> */}
+            />
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-row md:space-x-0 md:space-y-2">
