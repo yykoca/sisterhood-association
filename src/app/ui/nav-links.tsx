@@ -7,7 +7,7 @@ const links = [
   { name: 'About', href: '/about' },
   { name: 'Events', href: '/events' },
   { name: 'News', href: '/news' },
-  { name: 'Contact', href: '/contact', },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function NavLinks() {
@@ -18,7 +18,8 @@ export default function NavLinks() {
           <Link
             key={link.name}
             href={link.href}
-            className='flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 font-medium text-blue-950 hover:text-blue-400 md:flex-none md:justify-start md:p-2 md:px-3'>
+            className="flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 font-medium text-blue-950 hover:text-blue-400 md:flex-none md:justify-start md:p-2 md:px-3"
+          >
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );
